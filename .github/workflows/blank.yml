@@ -22,3 +22,7 @@ jobs:
 
     - name: Build project
       run: msbuild GitActionsTester.sln /p:Configuration=Release
+
+    # Optional test step if there are tests defined in your project
+    # - name: Run tests
+    #   run: vstest.console.exe "**\*.Test.dll" --logger:trx
